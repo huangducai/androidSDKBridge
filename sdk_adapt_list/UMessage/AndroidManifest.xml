@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.umessage">
+    <uses-sdk
+        android:minSdkVersion="10" />
+
+    <application >
+        <meta-data android:name="SDK_ENTRANCE_UMESSAGE" android:value="com.gamefps.sdk.umessage.UMMessage" />
+    </application>
+
+</manifest>

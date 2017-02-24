@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fly_sdk_content_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#00FFFFFF"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        style="@style/fly_sdk_dialog"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/flysdk_downloading_title_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/fly_sdk_icon_plain"
+                android:scaleType="fitCenter"
+
+                />
+
+            <TextView
+                android:id="@+id/flysdk_downloading_title"
+                style="@style/fly_sdk_title_text"
+                android:layout_width="fill_parent"
+                android:text="@string/flysdk_downloading_dialog_title_str" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/flysdk_downloading_msg"
+            style="@style/fly_sdk_content_downloading_text_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/flysdk_downloading_dialog_msg_str" />
+
+        <ProgressBar
+            android:id="@+id/flysdk_downloading_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="11dp"
+            android:layout_marginBottom="16dp"
+            android:max="100"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:progress="5"
+            android:progressDrawable="@drawable/fly_sdk_progressbar" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/flysdk_downloading_dialog_ok_btn"
+                style="@style/fly_sdk_button"
+                android:text="@string/flysdk_downloading_dialog_ok_btn_str" />
+
+            <Button
+                android:id="@+id/flysdk_downloading_dialog_resume_btn"
+                style="@style/fly_sdk_button"
+                android:text="@string/flysdk_downloading_dialog_resume_btn_str"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

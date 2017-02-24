@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gamefps.sdk.supersdk"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+    
+	<!-- 统计SDK需要的配置 -->  
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="com.android.vending.BILLING"/>
+    
+    <application>
+		<meta-data android:name="SDK_ENTRANCE_SUPERSDK" android:value="com.gamefps.sdk.supersdk.SuperSDKAdapter" />
+     <!-- SdkActivity需要配置 -->
+     
+        <!-- alipay sdk begin -->
+        <!-- 3.0.8SDK版本开始需要配置 -->
+      	<activity 
+	        android:name="com.supersdk.demo.platform.sdk.PluginLoginActivity"
+	        android:screenOrientation="sensor"
+	        android:theme="@android:style/Theme.Dialog">
+		</activity>
+  
+  		<meta-data android:name="sp_version" android:value="3.0.8" > </meta-data>
+  		<meta-data android:name="spsdk_channelid" android:value="0" > </meta-data>
+    </application>
+
+</manifest>

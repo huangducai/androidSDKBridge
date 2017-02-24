@@ -1,0 +1,17 @@
+Google+ 参数：
+679822965242-ng468cfnv6k5ch2d0nuut2dfhbj8nqvv.apps.googleusercontent.com
+
+Twitter参数：
+
+Consumer Key (API Key)	        cVnHvStK7MJJSHR0m9UHlh8va
+Consumer Secret (API Secret)	7khaglc0km0cGMLylTuLX01DknrrcelQ30YrhmPWQUEnAyGyFh
+
+
+FB参数:
+0114f0e04a8f46f41d6f36b6951ce38c
+
+签名密码：123123
+
+查看秘钥hash
+keytool -exportcert -alias friendfun -keystore F:\tools\youqu.jks | openssl sha1 -binary | openssl base64
+输入密钥库口令:  123123

@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.gosdk" >
+
+    <uses-sdk android:minSdkVersion="8" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <application android:name="cn.gosdk.app.FTSdkApplication">
+        <meta-data android:name="SDK_ENTRANCE_GO" android:value="com.gamefps.sdk.go.GOSDKAdapter" />
+        
+        <meta-data android:name="cn.gosdk.gameId" android:value="956930" />
+        <meta-data android:name="cn.gosdk.channelId" android:value="cecfcfcfcfcf" />
+        <meta-data android:name="cn.gosdk.channelVer" android:value="\01.0.0" />
+        <!-- 经分 appid -->
+        <meta-data android:name="cn.dpsdk.appid" android:value="\0467787787756" />
+        <!-- 经分 apiToken -->
+        <meta-data android:name="cn.dpsdk.apiToken" android:value="\040c2a4d0027b77f298d4dc0a5725ae46" />
+    </application>
+
+</manifest>

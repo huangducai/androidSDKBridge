@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <dimen name="game_update_btn_container_paddingX">8dp</dimen>
+    <dimen name="game_update_btn_container_padding_bottom">1dp</dimen>
+    <dimen name="game_update_btn_gap">4dp</dimen>
+    <dimen name="game_update_btn_height">33dp</dimen>
+    <dimen name="game_update_btn_text_size">14dp</dimen>
+    <dimen name="game_update_msg_bottom_margin">16dp</dimen>
+    <dimen name="game_update_msg_top_margin">24dp</dimen>
+    <dimen name="game_update_title_text_size">16dp</dimen>
+    <string name="flysdk_check_login_msg">登录校验...</string>
+    <string name="flysdk_download_cancel_dialog_back_str">返回</string>
+    <string name="flysdk_download_cancel_dialog_cancel_btn_str">确认退出</string>
+    <string name="flysdk_download_cancel_dialog_exit_game_str">退出游戏</string>
+    <string name="flysdk_download_cancel_dialog_msg_downloaded_str">安装包已下载，您确定要退出更新吗？</string>
+    <string name="flysdk_download_cancel_dialog_msg_downloading">安装包正在下载，您确定要退出更新吗？</string>
+    <string name="flysdk_download_cancel_dialog_msg_exit_confirm">您确定要退出更新吗？</string>
+    <string name="flysdk_download_cancel_dialog_ok_btn_str">继续更新</string>
+    <string name="flysdk_download_cancel_dialog_title_str">游戏更新</string>
+    <string name="flysdk_download_error_dialog_cancel_btn_str">退出游戏</string>
+    <string name="flysdk_download_error_dialog_enter_game_btn_str">进入游戏</string>
+    <string name="flysdk_download_error_dialog_msg_str">下载失败。</string>
+    <string name="flysdk_download_error_dialog_ok_btn_str">重新下载</string>
+    <string name="flysdk_download_error_dialog_title_str">游戏更新</string>
+    <string name="flysdk_downloaded_dialog_msg_str">游戏包下载完成,请安装以完成更新。</string>
+    <string name="flysdk_downloaded_dialog_ok_btn_str">立即安装</string>
+    <string name="flysdk_downloaded_dialog_title_str">下载完成</string>
+    <string name="flysdk_downloading_dialog_msg_str">游戏更新包下载中...</string>
+    <string name="flysdk_downloading_dialog_ok_btn_str">暂停</string>
+    <string name="flysdk_downloading_dialog_resume_btn_str">恢复</string>
+    <string name="flysdk_downloading_dialog_title_str">游戏更新</string>
+    <string name="flysdk_exit_dialog_cancel_btn_str">继续游戏</string>
+    <string name="flysdk_exit_dialog_exit_btn_str">确定退出</string>
+    <string name="flysdk_exit_dialog_msg_str">是否退出游戏？</string>
+    <string name="flysdk_exit_dialog_title_str">退出游戏</string>
+    <string name="flysdk_init_msg">正在初始化</string>
+    <string name="flysdk_init_title"/>
+    <string name="flysdk_no_open_dialog_msg_str">本游戏将于2016年6月2日24点开启服务器,敬请期待~</string>
+    <string name="flysdk_no_open_dialog_ok_btn_str">我知道了</string>
+    <string name="flysdk_no_open_dialog_title_str">游戏未开服</string>
+    <string name="flysdk_update_dialog_cancel_btn_str">稍后更新</string>
+    <string name="flysdk_update_dialog_msg_str">发现可用更新，更新文件大小为%fMb,建议使用WiFi下载。</string>
+    <string name="flysdk_update_dialog_ok_btn_str">立即更新</string>
+    <string name="flysdk_update_dialog_title_str">游戏更新</string>
+    <style name="fly_sdk_button">
+        <item name="android:textSize">@dimen/game_update_btn_text_size</item>
+        <item name="android:textColor">#fff67b29</item>
+        <item name="android:background">@drawable/fly_round_btn_bg</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">@dimen/game_update_btn_height</item>
+    </style>
+    <style name="fly_sdk_button_container">
+        <item name="android:paddingLeft">@dimen/game_update_btn_container_paddingX</item>
+        <item name="android:paddingRight">@dimen/game_update_btn_container_paddingX</item>
+        <item name="android:paddingBottom">@dimen/game_update_btn_container_padding_bottom</item>
+    </style>
+    <style name="fly_sdk_content_downloading_text_view">
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">#ff999999</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+    <style name="fly_sdk_content_text_view">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:layout_marginTop">@dimen/game_update_msg_top_margin</item>
+        <item name="android:layout_marginBottom">@dimen/game_update_msg_bottom_margin</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:minLines">2</item>
+
+    </style>
+    <style name="fly_sdk_content_view">
+        <item name="android:background">#b2141523</item>
+    </style>
+    <style name="fly_sdk_dialog">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="fly_sdk_dialog_theme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/fly_dialog_bg</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="fly_sdk_title_text">
+        <item name="android:textSize">@dimen/game_update_title_text_size</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">#fff67b29</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:layout_height">20.0dp</item>
+    </style>
+</resources>

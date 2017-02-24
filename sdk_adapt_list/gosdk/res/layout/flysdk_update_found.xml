@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fly_sdk_content_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#00FFFFFF"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        style="@style/fly_sdk_dialog"
+        android:layout_gravity="center"
+        android:background="#00FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/flysdk_update_title_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/fly_sdk_icon_plain"
+                android:scaleType="fitCenter"
+
+                />
+
+            <TextView
+                android:id="@+id/flysdk_update_title"
+                style="@style/fly_sdk_title_text"
+                android:layout_width="fill_parent"
+                android:text="@string/flysdk_update_dialog_title_str" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/flysdk_update_msg"
+            style="@style/fly_sdk_content_text_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/flysdk_update_dialog_msg_str" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/fly_sdk_button_container"
+            android:gravity="top|center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/flysdk_update_dialog_ok_btn"
+                style="@style/fly_sdk_button"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/game_update_btn_gap"
+                android:text="@string/flysdk_update_dialog_ok_btn_str" />
+
+            <Button
+                android:id="@+id/flysdk_update_dialog_cancel_btn"
+                style="@style/fly_sdk_button"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/game_update_btn_gap"
+                android:text="@string/flysdk_update_dialog_cancel_btn_str" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

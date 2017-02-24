@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="3dp" />
+
+    <gradient
+        android:angle="0"
+        android:centerY="1.0"
+        android:endColor="#ff23cd93"
+        android:startColor="#ff216bd2" />
+
+    <!--create invisible stroke for padding-->
+    <stroke
+        android:width="5dip"
+        android:color="@android:color/transparent"/>
+
+</shape>

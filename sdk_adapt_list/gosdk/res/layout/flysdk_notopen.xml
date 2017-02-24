@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fly_sdk_content_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#00000000"
+    android:clickable="true"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        style="@style/fly_sdk_dialog"
+        android:layout_gravity="center"
+        android:background="#00FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/flysdk_no_open_title_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/fly_sdk_icon_remind"
+                android:scaleType="fitCenter"
+
+                />
+
+            <TextView
+                android:id="@+id/flysdk_no_open_title"
+                style="@style/fly_sdk_title_text"
+                android:layout_width="fill_parent"
+                android:text="@string/flysdk_no_open_dialog_title_str" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/flysdk_no_open_msg"
+            style="@style/fly_sdk_content_text_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/flysdk_no_open_dialog_msg_str" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/flysdk_no_open_dialog_ok_btn"
+                style="@style/fly_sdk_button"
+                android:gravity="center"
+                android:text="@string/flysdk_no_open_dialog_ok_btn_str" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
