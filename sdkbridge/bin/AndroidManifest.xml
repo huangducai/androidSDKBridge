@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gamefps.sdkbridge"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application>
+        
+        
+          <receiver android:name="com.gamefps.sdkbridge.notification.EventReceiver" android:process=":push">
+            
+            
+            <!--<intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+             --><!-- Optional --><!--
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>-->
+           
+           
+       </receiver>
+        
+    </application>
+
+</manifest>
